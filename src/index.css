@@ -1,7 +1,9 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Outfit:wght@100..900&family=Roboto:wght@400;500;700;900&display=swap");
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-.position-center {
-    @apply flex flex-col items-center justify-center;
+.pixelado {
+    image-rendering: pixelated;
 }

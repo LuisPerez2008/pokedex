@@ -1,17 +1,19 @@
-import { useState } from 'react'
+
+import { Pokemons } from './components/Pokemons'
+import { Aside } from './components/Aside'
 
 
 
 function App() {
-  const [count, setCount] = useState(0)
+
 
   return (
-    <div className="position-center h-screen">
-      <h1 className='text-5xl font-bold'>Pokedex</h1>
-      <p className='text-2xl'>{count}</p>
-      <button onClick={() => setCount(count + 1)}>Click me</button>
-
-    </div>
+    <section className='bg-[#F6F8FC] '>
+      <main className='max-w-[1400px] mx-auto grid grid-cols-1 lg:grid-cols-[1fr_300px] '>
+        <Pokemons />
+        <Aside />
+      </main>
+    </section>
   )
 }
 
