@@ -10,7 +10,7 @@ export const PokemonDetail = ({ pokemon }) => {
       <header className='absolute left-1/2 -translate-x-1/2 -translate-y-1/2 z-20 ' >
         <img src={pokemon?.image} alt={pokemon?.name} className='pixelado w-24 aspect-square' />
       </header>
-      <div className='overflow-y-auto px-4 pt-8 grid gap-2 content-start h-full hidden-scroll'>
+      <div className='overflow-y-auto px-4 pt-8 grid gap-2 content-start h-full '>
 
         <span className='text-slate-300  mt-9'>N° {pokemon?.id}</span>
         <h2 className='font-bold text-xl capitalize'>{pokemon?.name}</h2>
@@ -31,7 +31,7 @@ export const PokemonDetail = ({ pokemon }) => {
           <h4 className='font-bold capitalize'>Pokedex Entry</h4>
           <p className='text-slate-400 lg:text-sm'>{pokemon?.description}</p>
         </div>
-        <section className='grid grid-cols-2 gap-4 lg:text-sm' >
+        <section className='grid grid-cols-2 gap-4' >
           <div>
             <h4 className='font-bold capitalize'>Height</h4>
             <span className='bg-slate-100 block rounded-full p-1'>{pokemon?.height}</span>

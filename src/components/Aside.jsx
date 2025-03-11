@@ -5,7 +5,7 @@ export const Aside = ({ pokemon, isLoading }) => {
 
 
   return (
-    <section className="hidden lg:block border sticky top-0 h-screen overflow-hidden ">
+    <section className="hidden lg:block sticky top-0 h-screen overflow-hidden ">
       <article className={`absolute bg-white w-full h-[90%] z-20 bottom-0 rounded-tl-3xl rounded-tr-3xl text-center transition-all duration-500 ${pokemon && !isLoading ? "left-0" : "left-[50vw]"}`}>
         <PokemonDetail pokemon={pokemon} />
       </article>
